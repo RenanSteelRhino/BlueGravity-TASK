@@ -28,24 +28,29 @@ namespace BGSTask
         {
             dir = TopDownCharacterController.Instance.GetCurrentDirection();
 
+            //Get the ID from library, to always be up to date with new outifits or changes
+            int outifitID = GameLibrary.Instance.GetOutifit_ID();
+
             if(dir.x == 1)
             {
-                mainRenderer.sprite = bundle.outifitsBundles[0].sideSprite;
+                mainRenderer.sprite = bundle.outifitsBundles[outifitID].sideSprite;
                 mainRenderer.flipX = true;
             }
             else if(dir.x == -1)
             {
-                mainRenderer.sprite = bundle.outifitsBundles[0].sideSprite;
+                mainRenderer.sprite = bundle.outifitsBundles[outifitID].sideSprite;
                 mainRenderer.flipX = false;
             }
 
             if(dir.y == 1)
             {
-                mainRenderer.sprite = bundle.outifitsBundles[0].northSprite;
+                mainRenderer.sprite = bundle.outifitsBundles[outifitID].northSprite;
+                mainRenderer.flipX = false;
             }
             else if(dir.y == -1)
             {
-                mainRenderer.sprite = bundle.outifitsBundles[0].southSprite;
+                mainRenderer.sprite = bundle.outifitsBundles[outifitID].southSprite;
+                mainRenderer.flipX = false;
             }
         }
     }

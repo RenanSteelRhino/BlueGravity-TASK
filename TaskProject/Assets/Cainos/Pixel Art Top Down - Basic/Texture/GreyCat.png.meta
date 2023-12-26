@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ec778ff538861a64683503704a6f66c2
+guid: 7006c2d55fe339647b54ffcbee5fa1a1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TX Player-SUIT_0
+      name: GreyCat_0
       rect:
         serializedVersion: 2
         x: 6
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b550cc941a444d429e5cda9a4ed323e
-      internalID: 1499200590
+      spriteID: e960fe80b55dc794a9825987315b7652
+      internalID: 2103902164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Player-SUIT_1
+      name: GreyCat_1
       rect:
         serializedVersion: 2
         x: 38
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28412da89c3e9cb4bad5d9828b264d23
-      internalID: 1144903892
+      spriteID: 885568056c1593c4394c8f429c777d3e
+      internalID: -212044472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Player-SUIT_2
+      name: GreyCat_2
       rect:
         serializedVersion: 2
         x: 69
@@ -160,8 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67d2557d121d7af4a93b3491801c745c
-      internalID: -382100419
+      spriteID: 7b65ea3121e64d24b9e0b5334eed2966
+      internalID: -1477066398
       vertices: []
       indices: 
       edges: []
@@ -177,9 +177,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TX Player-SUIT_0: 1499200590
-      TX Player-SUIT_2: -382100419
-      TX Player-SUIT_1: 1144903892
+      GreyCat_0: 2103902164
+      GreyCat_2: -1477066398
+      GreyCat_1: -212044472
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
