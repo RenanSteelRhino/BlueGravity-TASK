@@ -7,7 +7,7 @@ namespace BGSTask
 {
     //This class will handle the sprites for each direction that the player is facing
     [RequireComponent(typeof(SpriteRenderer))]
-    public class SpriteControllerForDirection : NeedOutifitSO
+    public class SpriteControllerForDirection : NeedOutfitSO
     {
         [SerializeField] SpriteRenderer mainRenderer;
         Vector2 dir;

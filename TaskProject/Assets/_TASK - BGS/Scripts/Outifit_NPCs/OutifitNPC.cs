@@ -17,7 +17,10 @@ namespace BGSTask
 
         public override void OnInteract()
         {
-            //Open the outifit UI here
+            //Open store UI
+            OutfitStoreManager.Instance.OpenStore();
+            //Close dialog and interaction button
+            OnTriggerExit();
         }
 
         private void Awake() 

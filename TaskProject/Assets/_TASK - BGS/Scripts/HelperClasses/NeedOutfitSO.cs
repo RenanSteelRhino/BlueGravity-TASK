@@ -3,7 +3,7 @@ using UnityEngine;
 namespace BGSTask
 {   
     //Simple class that gives access to the outifit bundle list.
-    public class NeedOutifitSO : MonoBehaviour
+    public class NeedOutfitSO : MonoBehaviour
     {
         protected SO_SpriteBundle bundle;
 
