@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747e938018c444d4983aa4a702bf3236, type: 3}
+  m_Name: SO_SpriteBundle
+  m_EditorClassIdentifier: 
+  outifitsBundles:
+  - northSprite: {fileID: 21300002, guid: ec47f75fe8aff1644ac73998f4ad31b5, type: 3}
+    southSprite: {fileID: 21300000, guid: ec47f75fe8aff1644ac73998f4ad31b5, type: 3}
+    sideSprite: {fileID: 21300004, guid: ec47f75fe8aff1644ac73998f4ad31b5, type: 3}
+    price: 0
+  - northSprite: {fileID: 1144903892, guid: ec778ff538861a64683503704a6f66c2, type: 3}
+    southSprite: {fileID: 1499200590, guid: ec778ff538861a64683503704a6f66c2, type: 3}
+    sideSprite: {fileID: -382100419, guid: ec778ff538861a64683503704a6f66c2, type: 3}
+    price: 10
