@@ -185,6 +185,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5100217437599595380, guid: 8d15c39fd3e3cab47ab96fbaf6dc2f92, type: 3}
   m_PrefabInstance: {fileID: 15365159}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &73058744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 73058745}
+  - component: {fileID: 73058746}
+  m_Layer: 0
+  m_Name: Interaction Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &73058745
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73058744}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1132100788}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &73058746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73058744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90bf00101724e894884436c69aa103af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionKey: 101
 --- !u!1001 &97947761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -861,6 +906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d0f9c406ad23e4e91f1342456ceda5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerObject: {fileID: 0}
   overrideOutifitID: 0
 --- !u!1 &262914825
 GameObject:
@@ -9036,7 +9082,7 @@ GameObject:
   - component: {fileID: 427144430}
   - component: {fileID: 427144429}
   m_Layer: 5
-  m_Name: Image
+  m_Name: InteractionButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9052,7 +9098,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 784745388}
   m_Father: {fileID: 1357289608}
@@ -13341,6 +13387,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 260703834}
+  - {fileID: 73058745}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18854,7 +18901,7 @@ GameObject:
   - component: {fileID: 5628018140422024488}
   - component: {fileID: 4616719886818565893}
   - component: {fileID: 5628018140422024489}
-  m_Layer: 20
+  m_Layer: 6
   m_Name: Dark Outifit NPC
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -18970,6 +19017,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: {fileID: 1553966834}
+  InteractionButton: {fileID: 427144427}
+  speed: 0.35
+  easeType: 9
 --- !u!1 &5628018141009371384
 GameObject:
   m_ObjectHideFlags: 0

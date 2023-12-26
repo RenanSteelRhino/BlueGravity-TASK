@@ -3,15 +3,22 @@ using UnityEngine;
 
 namespace BGSTask
 {
-    public class OutifitNPC : MonoBehaviour
+    public class OutifitNPC : InteractableObject
     {
         //Used to start and to finish the dialog
         [SerializeField] InteractionTrigger trigger;
-        [SerializeField] GameObject InteractionButton;
+
         [Space]
         [Header("Tween Options")]
+        [SerializeField] GameObject InteractionButton;
         [SerializeField] float speed = 0.35f;
         [SerializeField] Ease easeType = Ease.OutCubic;
+        bool insideInteraction;
+
+        public override void OnInteract()
+        {
+            //Open the outifit UI here
+        }
 
         private void Awake() 
         {
