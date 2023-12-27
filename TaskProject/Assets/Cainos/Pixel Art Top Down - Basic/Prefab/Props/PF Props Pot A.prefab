@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 2577585254963922478}
   - component: {fileID: 2577585254963922476}
   - component: {fileID: 9140004029675014805}
+  - component: {fileID: 4750205774841288799}
   m_Layer: 20
   m_Name: PF Props Pot A
   m_TagString: Untagged
@@ -223,3 +224,17 @@ PolygonCollider2D:
       - {x: -0.11308575, y: 0.02905941}
       - {x: 0.107274055, y: 0.031965256}
       - {x: 0.20574903, y: 0.11417794}
+--- !u!114 &4750205774841288799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2577585254963922480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b66d39f34645de04a98af01c7ed20eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 1
+  rewardCoins: 1

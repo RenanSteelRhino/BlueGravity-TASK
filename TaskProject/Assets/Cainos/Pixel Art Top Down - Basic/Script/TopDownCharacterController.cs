@@ -1,4 +1,5 @@
-﻿using BGSTask;
+﻿using System;
+using BGSTask;
 using UnityEngine;
 
 namespace Cainos.PixelArtTopDown_Basic
@@ -9,6 +10,22 @@ namespace Cainos.PixelArtTopDown_Basic
         private Animator animator;
         Vector2 dir = Vector2.zero;
         bool lockMovement = false;
+
+        private void Awake() 
+        {
+            SaveManager.OnGameLoaded += LoadData;
+        }
+
+        private void LoadData(SaveData data)
+        {
+            transform.position = data.playerPos;
+            this.gameObject.layer = data.playerLayer;
+
+            //Load layers in each sprite renderer nedded by the player
+            SpriteRenderer[] renderers = gameObject.GetComponentsInChildren<SpriteRenderer>();
+            foreach ( SpriteRenderer sr in renderers)
+                sr.sortingLayerName = data.playerLayer == 7 ? "Layer 1" : "Layer 2";
+        }
 
         private void Start()
         {

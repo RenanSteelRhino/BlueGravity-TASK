@@ -45,3 +45,19 @@ MonoBehaviour:
     description: This one saw too much already... saw enought to lost an eye.
     title: The Wise one
     isBought: 0
+  - ID: 4
+    northSprite: {fileID: 388138612, guid: 68c76786f2181e9408a8629b58f42aaf, type: 3}
+    southSprite: {fileID: 688878803, guid: 68c76786f2181e9408a8629b58f42aaf, type: 3}
+    sideSprite: {fileID: -1691162872, guid: 68c76786f2181e9408a8629b58f42aaf, type: 3}
+    price: 16
+    description: The finest of cats. Only eats canned food and fish.
+    title: Top hat cat
+    isBought: 0
+  - ID: 5
+    northSprite: {fileID: -895465939, guid: 8460602b43bec5a4a8d2547674757aa1, type: 3}
+    southSprite: {fileID: -1136181107, guid: 8460602b43bec5a4a8d2547674757aa1, type: 3}
+    sideSprite: {fileID: 1527925538, guid: 8460602b43bec5a4a8d2547674757aa1, type: 3}
+    price: 32
+    description: they say that cats have 7 lives, this one has none left.
+    title: Spooky one
+    isBought: 0

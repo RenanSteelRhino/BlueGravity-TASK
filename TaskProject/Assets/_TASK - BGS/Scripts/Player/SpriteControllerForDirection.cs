@@ -28,6 +28,8 @@ namespace BGSTask
                     Debug.Log(data.boughtOutfits[i]);
                 }
             }
+
+            OnNewOutfitEquip(data.outfitID);
         }
 
         private void Start() 

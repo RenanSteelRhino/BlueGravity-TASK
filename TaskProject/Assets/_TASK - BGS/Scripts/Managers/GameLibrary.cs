@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
@@ -52,6 +53,15 @@ namespace BGSTask
             }
         #endregion
 
+
+        private void Awake() {
+            SaveManager.OnGameLoaded += LoadData;
+        }
+
+        private void LoadData(SaveData data)
+        {
+            SetOutifit_ID(data.outfitID);
+        }
 
         private void Start()
         {

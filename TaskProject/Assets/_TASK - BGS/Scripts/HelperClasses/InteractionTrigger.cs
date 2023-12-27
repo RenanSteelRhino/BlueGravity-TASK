@@ -10,10 +10,13 @@ namespace BGSTask
 
         private void OnTriggerEnter2D(Collider2D other) 
         {
+            if(!other.CompareTag("Player")) return;
             onTriggerEnter?.Invoke();
         }
 
-        private void OnTriggerExit2D(Collider2D other) {
+        private void OnTriggerExit2D(Collider2D other) 
+        {
+            if(!other.CompareTag("Player")) return;
             onTriggerExit?.Invoke();
         }
     }

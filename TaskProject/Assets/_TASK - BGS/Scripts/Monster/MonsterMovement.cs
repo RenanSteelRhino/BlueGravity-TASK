@@ -10,8 +10,15 @@ namespace BGSTask
         Vector2 dir;
         Vector2 startPoint;
 
-        private void Start() {
+        private void Start()
+        {
             startPoint = transform.position;
+            StartMovement();
+        }
+
+        public void StartMovement()
+        {
+            StopAllCoroutines();
             StartCoroutine(GetNewPoint());
         }
 
