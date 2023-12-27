@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace BGSTask
 {
+    //A class that controls the collection of outfits
     public class OutfitCollectionManager : Singleton<OutfitCollectionManager>
     {
         [SerializeField] GameObject collectionParentObj;
@@ -37,7 +38,7 @@ namespace BGSTask
                 {
                     //Update collection list
                     GameLibrary.Instance.UpdateCollectionList();
-                    
+
                     //Setup the banners with the list
                     SetupCollectionBanners();
 

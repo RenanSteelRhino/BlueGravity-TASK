@@ -60,13 +60,19 @@ namespace BGSTask
 
         private void LoadData(SaveData data)
         {
+            //Set the outfit ID when loading the game
+            //Doind that to ensure the right outfit is loaded and enabled
             SetOutifit_ID(data.outfitID);
         }
 
         private void Start()
         {
             outfitBundle = Resources.Load<SO_SpriteBundle>("SO_SpriteBundle");
+
+            //When a new outfit is equiped I set the ID to change it up on the player
             OutfitCollectionManager.OnNewOutfitEquip += SetOutifit_ID;
+            
+            //Update the list in the collection based on what is bought
             UpdateCollectionList();
         }
 

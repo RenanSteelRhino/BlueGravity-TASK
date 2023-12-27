@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace BGSTask
-{
+{   
+    //Class made to revive and respawn monsters for the game loop
     public class MonsterSpawnManager : MonoBehaviour
     {
         [SerializeField] List<GameObject> monsters = new();

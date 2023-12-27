@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace BGSTask
 {
+    //Create the feedback texts on the game world
     public class FeedbackTextManager : Singleton<FeedbackTextManager>
     {
         [SerializeField] GameObject feedbackPrefab;
@@ -12,13 +13,16 @@ namespace BGSTask
         {
             GameObject createdObj = null;
 
+            //Create a new object or get one from pool
             if(coinsPool.Count > 0)
                 createdObj = coinsPool.Dequeue();
             else
                 createdObj = Instantiate(feedbackPrefab);
 
+            //Set text position
             createdObj.transform.position = position;
             createdObj.SetActive(true);
+            //Setup text informartion
             createdObj.GetComponent<FeedbackCoin>().SetupCoin(text);
 
         }

@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace BGSTask
 {
+    //Simple trigger that send events if the player enter or leave it
     public class InteractionTrigger : MonoBehaviour
     {
         public event Action onTriggerEnter;

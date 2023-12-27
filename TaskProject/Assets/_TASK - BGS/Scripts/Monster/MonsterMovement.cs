@@ -12,6 +12,7 @@ namespace BGSTask
 
         private void Start()
         {
+            //Cache the start point
             startPoint = transform.position;
             StartMovement();
         }
@@ -24,6 +25,7 @@ namespace BGSTask
 
         IEnumerator GetNewPoint()
         {
+            //get a new random point from the start point, them move in that direction
             while(true)
             {
                 yield return new WaitForSeconds(Random.Range(1f,5f));

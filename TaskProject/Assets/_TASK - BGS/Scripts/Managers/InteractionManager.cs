@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace BGSTask
 {
+    //Just a class to store comum used hotkeys
     public class InteractionManager : Singleton<InteractionManager>
     {
         [SerializeField] KeyCode interactionKey = KeyCode.E;

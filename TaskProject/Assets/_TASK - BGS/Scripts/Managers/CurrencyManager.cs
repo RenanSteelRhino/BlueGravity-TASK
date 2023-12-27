@@ -12,10 +12,8 @@ namespace BGSTask
         [Header("UI")]
         [SerializeField] TextMeshProUGUI coinsAmountText;
 
-        private void Awake() 
-        {
-            SaveManager.OnGameLoaded += LoadData;
-        }
+        // Linke the LoadData to the when the game is loadaded
+        private void Awake() => SaveManager.OnGameLoaded += LoadData;
 
         private void LoadData(SaveData data)
         {
