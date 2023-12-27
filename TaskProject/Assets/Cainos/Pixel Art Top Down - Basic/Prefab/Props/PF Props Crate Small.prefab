@@ -149,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 1
   rewardCoins: 1
+  isProp: 1
 --- !u!1 &8150476868737220289
 GameObject:
   m_ObjectHideFlags: 0

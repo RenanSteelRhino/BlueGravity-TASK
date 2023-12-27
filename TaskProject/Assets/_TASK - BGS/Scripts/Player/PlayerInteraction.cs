@@ -17,7 +17,7 @@ namespace BGSTask
 
         void CheckForInteractableObjects()
         {
-            RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(1.5f ,1.5f),0, Vector2.zero, 1, interactionLayer);
+            RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(1.6f ,1.6f),0, Vector2.zero, 1, interactionLayer);
 
             //If a object was hit, interact with it
             if(hit.transform == null) return;

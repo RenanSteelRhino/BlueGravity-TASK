@@ -1,4 +1,5 @@
 using System;
+using GameEnums;
 using TMPro;
 using UnityEngine;
 
@@ -36,6 +37,7 @@ namespace BGSTask
         {
             coinsAmount += amount;
             UpdateCoinText();
+            SoundManager.Instance.SpawnAudioFor(Enum_AudioTypes.coins);
         }
 
         public void UseCoins(int amount)
