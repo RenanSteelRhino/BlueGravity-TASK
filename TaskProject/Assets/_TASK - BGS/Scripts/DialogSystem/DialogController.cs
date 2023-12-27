@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Text;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,14 +21,21 @@ namespace BGSTask
         
         public void StartDialog() 
         {
+            //Enable dialog box
             dialogHolder.SetActive(true);
+            dialogHolder.transform.localScale = Vector3.zero;
+            dialogHolder.transform.DOScale(Vector3.one, 0.25f).SetEase(Ease.OutQuint);
+            //Start the dialog animation
             StartCoroutine(WriteMessagemOnDialogBox());
         }
 
         public void StopDialog()
         {
+            //Stop the dialog animation
             StopAllCoroutines();
-            dialogHolder.SetActive(false);
+            //Close the dialog box
+            dialogHolder.transform.DOScale(Vector3.zero, 0.25f).SetEase(Ease.OutQuint).OnComplete( () => dialogHolder.SetActive(false));
+            
         }
 
 
