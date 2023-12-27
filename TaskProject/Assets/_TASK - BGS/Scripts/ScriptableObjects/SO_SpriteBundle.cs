@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,5 +9,7 @@ namespace BGSTask
         //This list will store all outifits in the game
         //Here I can access the outifits by index
         public List<SpriteBundle> outifitsBundles = new();
+
+        
     }
 }

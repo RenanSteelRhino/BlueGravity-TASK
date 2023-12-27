@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Cainos.PixelArtTopDown_Basic;
 using UnityEngine;
 
@@ -12,10 +10,32 @@ namespace BGSTask
         [SerializeField] SpriteRenderer mainRenderer;
         Vector2 dir;
 
+        protected override void Awake() 
+        {
+            base.Awake();
+            SaveManager.OnGameLoaded += LoadData;
+        }
+
+        private void LoadData(SaveData data)
+        {
+            for (int i = 0; i < bundle.outifitsBundles.Count; i++)
+            {
+                if(i == 0 )
+                    bundle.outifitsBundles[i].isBought = true;
+                else
+                {
+                    bundle.outifitsBundles[i].isBought = data.boughtOutfits[i];
+                    Debug.Log(data.boughtOutfits[i]);
+                }
+            }
+        }
+
         private void Start() 
         {
             if(mainRenderer == null)
                 mainRenderer = GetComponent<SpriteRenderer>();
+
+            OutfitCollectionManager.OnNewOutfitEquip += OnNewOutfitEquip;
         }
 
         private void Update()
@@ -52,6 +72,11 @@ namespace BGSTask
                 mainRenderer.sprite = bundle.outifitsBundles[outifitID].southSprite;
                 mainRenderer.flipX = false;
             }
+        }
+
+        public void OnNewOutfitEquip(int ID)
+        {
+            mainRenderer.sprite = bundle.outifitsBundles[ID].southSprite;
         }
     }
 }

@@ -13,19 +13,35 @@ MonoBehaviour:
   m_Name: SO_SpriteBundle
   m_EditorClassIdentifier: 
   outifitsBundles:
-  - northSprite: {fileID: 21300002, guid: ec47f75fe8aff1644ac73998f4ad31b5, type: 3}
+  - ID: 0
+    northSprite: {fileID: 21300002, guid: ec47f75fe8aff1644ac73998f4ad31b5, type: 3}
     southSprite: {fileID: 21300000, guid: ec47f75fe8aff1644ac73998f4ad31b5, type: 3}
     sideSprite: {fileID: 21300004, guid: ec47f75fe8aff1644ac73998f4ad31b5, type: 3}
     price: 0
-  - northSprite: {fileID: 1144903892, guid: ec778ff538861a64683503704a6f66c2, type: 3}
+    description: Default cat. Boring...
+    title: Default
+    isBought: 1
+  - ID: 1
+    northSprite: {fileID: 1144903892, guid: ec778ff538861a64683503704a6f66c2, type: 3}
     southSprite: {fileID: 1499200590, guid: ec778ff538861a64683503704a6f66c2, type: 3}
     sideSprite: {fileID: -382100419, guid: ec778ff538861a64683503704a6f66c2, type: 3}
     price: 2
-  - northSprite: {fileID: -377062330, guid: 2b594f1b381de5a429e7c4adf60e5588, type: 3}
+    description: Wanna be a wall stree cat? This is the way
+    title: Suit cat
+    isBought: 0
+  - ID: 2
+    northSprite: {fileID: -377062330, guid: 2b594f1b381de5a429e7c4adf60e5588, type: 3}
     southSprite: {fileID: 834085360, guid: 2b594f1b381de5a429e7c4adf60e5588, type: 3}
     sideSprite: {fileID: 682089782, guid: 2b594f1b381de5a429e7c4adf60e5588, type: 3}
     price: 4
-  - northSprite: {fileID: -212044472, guid: 7006c2d55fe339647b54ffcbee5fa1a1, type: 3}
+    description: from a cardboard box on the 21 Avenue, here comes fred!
+    title: Fred, the mad
+    isBought: 0
+  - ID: 3
+    northSprite: {fileID: -212044472, guid: 7006c2d55fe339647b54ffcbee5fa1a1, type: 3}
     southSprite: {fileID: 2103902164, guid: 7006c2d55fe339647b54ffcbee5fa1a1, type: 3}
     sideSprite: {fileID: -1477066398, guid: 7006c2d55fe339647b54ffcbee5fa1a1, type: 3}
     price: 8
+    description: This one saw too much already... saw enought to lost an eye.
+    title: The Wise one
+    isBought: 0

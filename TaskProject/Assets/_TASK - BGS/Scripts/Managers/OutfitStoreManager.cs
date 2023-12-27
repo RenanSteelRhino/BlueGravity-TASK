@@ -21,37 +21,48 @@ namespace BGSTask
 
         private void Start() 
         {
+            if(outfitBundleSO == null)
+                outfitBundleSO = Resources.Load<SO_SpriteBundle>("SO_SpriteBundle");
+
             //Link the function to the button
             //I prefere doind that way because you can cleary see the references
             //This is better then assigning the function in the button inspector, with can be easily missed
             //It also keep things organized and in one place only.
             closeButton.onClick.AddListener(CloseStore);
+
+            SetupStoreBanners();
         }
 
         void SetupStoreBanners()
         {   
             //Run the list of banners and setup their values such as icon, description, price etc
-            for (int i = 0; i < bannerList.Count; i++)
+            for (int i = 0; i < outfitBundleSO.outifitsBundles.Count; i++)
             {
                 bannerList[i].SetupBanner(outfitBundleSO.outifitsBundles[i]);
-                bannerList[i].GetButton().onClick.AddListener(() => BuyOutfit(i));
 
+                int newID = i;
+                bannerList[i].GetButton().onClick.AddListener(() => BuyOutfit(newID));
             }
         }
 
         public void BuyOutfit(int ID)
         {
+            Debug.Log($"Buying ID {ID}");
+
             SpriteBundle bundle = outfitBundleSO.outifitsBundles[ID];
             if(bundle == null) return;
-            //Check for coins
-            // if(!CurrencyManager.Instance.HasCoins(bundle.price)) return
+
+            //Check if player has coins to buy
+            if(!CurrencyManager.Instance.HasCoins(bundle.price)) return;
+
+            //Spend the coins
+            CurrencyManager.Instance.UseCoins(bundle.price);
+
+            //Set bundle as bought
             bundle.isBought = true;
 
-            //If the bundle is aready on the owned list, return
-            if(GameLibrary.Instance.ownedBundles.Contains(bundle)) return;
-
-            //Add the bundle to the owned list
-            GameLibrary.Instance.ownedBundles.Add(bundle);
+            //Update the list of owned outfits
+            GameLibrary.Instance.UpdateCollectionList();
         }
 
         public void OpenStore()

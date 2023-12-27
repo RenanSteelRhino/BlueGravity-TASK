@@ -24,7 +24,7 @@ namespace BGSTask
         public void SetupBanner(SpriteBundle bundle)
         {
             icon.sprite = bundle.southSprite;
-            priceText.text = bundle.price.ToString();
+            priceText.text = "x " + bundle.price.ToString();
             descriptionText.text = bundle.description;
             titleText.text = bundle.title;
         }

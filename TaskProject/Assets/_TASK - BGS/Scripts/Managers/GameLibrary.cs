@@ -1,5 +1,6 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 
 namespace BGSTask
@@ -10,6 +11,8 @@ namespace BGSTask
     // - Were is the player reference?
     public class GameLibrary : Singleton<GameLibrary>
     {
+        [SerializeField] SO_SpriteBundle outfitBundle;
+
         #region Player Reference
             [SerializeField] GameObject playerObject;
             public GameObject GetPlayerObject()
@@ -48,5 +51,26 @@ namespace BGSTask
                 return outifitID;
             }
         #endregion
+
+
+        private void Start()
+        {
+            outfitBundle = Resources.Load<SO_SpriteBundle>("SO_SpriteBundle");
+            OutfitCollectionManager.OnNewOutfitEquip += SetOutifit_ID;
+            UpdateCollectionList();
+        }
+
+        public void UpdateCollectionList()
+        {
+            ownedBundles = outfitBundle.outifitsBundles.Where(item => item.isBought == true).ToList();
+        }
+
+        private void OnDestroy() {
+            OutfitCollectionManager.OnNewOutfitEquip -= SetOutifit_ID;
+        }
+
+        private void OnDisable() {
+            OutfitCollectionManager.OnNewOutfitEquip -= SetOutifit_ID;
+        }
     }
 }
