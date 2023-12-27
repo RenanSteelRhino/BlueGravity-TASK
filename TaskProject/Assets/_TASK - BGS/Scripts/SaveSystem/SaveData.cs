@@ -11,6 +11,7 @@ namespace BGSTask
         public int outfitID;
         public Vector2 playerPos;
         public int playerLayer;
+        public int tutorialPhase;
 
         public void SetupData()
         {
@@ -34,6 +35,8 @@ namespace BGSTask
             //Save the last know layer in with the player was in (second or first floor)
             playerLayer = GameLibrary.Instance.GetPlayerObject().layer;
 
+            //Save tutorial
+            tutorialPhase = TutorialManager.Instance.tutorialPhase;
         }
     }
 }

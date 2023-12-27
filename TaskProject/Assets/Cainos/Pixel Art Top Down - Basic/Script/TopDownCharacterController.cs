@@ -19,12 +19,12 @@ namespace Cainos.PixelArtTopDown_Basic
         private void LoadData(SaveData data)
         {
             transform.position = data.playerPos;
-            this.gameObject.layer = data.playerLayer;
+            this.gameObject.layer = data.playerLayer == 0 ? 7 : data.playerLayer;
 
             //Load layers in each sprite renderer nedded by the player
             SpriteRenderer[] renderers = gameObject.GetComponentsInChildren<SpriteRenderer>();
             foreach ( SpriteRenderer sr in renderers)
-                sr.sortingLayerName = data.playerLayer == 7 ? "Layer 1" : "Layer 2";
+                sr.sortingLayerName = data.playerLayer == 7 ? "Layer 1" : data.playerLayer == 8 ? "Layer 2" : "Layer 1";
         }
 
         private void Start()

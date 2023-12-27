@@ -35,7 +35,12 @@ namespace BGSTask
                     collectionParentObj.SetActive(false);
                 else
                 {
+                    //Update collection list
+                    GameLibrary.Instance.UpdateCollectionList();
+                    
+                    //Setup the banners with the list
                     SetupCollectionBanners();
+
                     collectionParentObj.SetActive(true);
                 }
             }

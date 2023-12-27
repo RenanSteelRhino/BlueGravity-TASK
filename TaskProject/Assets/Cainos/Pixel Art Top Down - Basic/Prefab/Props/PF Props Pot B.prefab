@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 3188847541594546283}
   m_Layer: 20
   m_Name: PF Props Pot B
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
