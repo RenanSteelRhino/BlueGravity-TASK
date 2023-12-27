@@ -815,6 +815,7 @@ Transform:
   - {fileID: 944459820}
   - {fileID: 1810746478}
   - {fileID: 1783692808}
+  - {fileID: 2124601025}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8242,6 +8243,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d546d2d8b016864ab41e2185c250eb5, type: 3}
+--- !u!4 &289728724 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+  m_PrefabInstance: {fileID: 662940027}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &290827126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11917,6 +11923,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e7797bb065982d4497d030f065d6e2f, type: 3}
+--- !u!1001 &353582604
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2124601025}
+    m_Modifications:
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433591, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_Name
+      value: Flying Eye Monster (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
 --- !u!1001 &358674837
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13196,6 +13259,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: 4c4e80b50a323dc478f7c84e0b8fdad2, type: 3}
   m_PrefabInstance: {fileID: 538504528}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &540187134 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+  m_PrefabInstance: {fileID: 1310748955}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &568843911
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13785,6 +13853,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84395be60ff2def43bb58fa039614eab, type: 3}
+--- !u!1001 &662940027
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2124601025}
+    m_Modifications:
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433591, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_Name
+      value: Flying Eye Monster (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
 --- !u!1001 &695735796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20398,6 +20523,68 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0a66c9b152e801409fc26c4ca493d18, type: 3}
+--- !u!1001 &1159152568
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2124601025}
+    m_Modifications:
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433591, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_Name
+      value: Flying Eye Monster (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+--- !u!4 &1163226254 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+  m_PrefabInstance: {fileID: 1159152568}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1164369733
 GameObject:
   m_ObjectHideFlags: 0
@@ -21577,6 +21764,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7509736641193634087, guid: 2d546d2d8b016864ab41e2185c250eb5, type: 3}
   m_PrefabInstance: {fileID: 121168612}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1310748955
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2124601025}
+    m_Modifications:
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433591, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_Name
+      value: Flying Eye Monster (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+--- !u!4 &1317933486 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+  m_PrefabInstance: {fileID: 4902190118117221724}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1326681295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21774,6 +22023,11 @@ Canvas:
   m_SortingLayerID: 1756695869
   m_SortingOrder: 500
   m_TargetDisplay: 0
+--- !u!4 &1359960697 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+  m_PrefabInstance: {fileID: 1736518353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1364598142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23829,6 +24083,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7509736641193634087, guid: 2d546d2d8b016864ab41e2185c250eb5, type: 3}
   m_PrefabInstance: {fileID: 891989001}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1736518353
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2124601025}
+    m_Modifications:
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433591, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_Name
+      value: Flying Eye Monster (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
 --- !u!1001 &1745786727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23950,6 +24261,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbd613b74e42eb44ba2ca470584dedbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1767580341 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+  m_PrefabInstance: {fileID: 1793504661}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1774025049 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2055102311959635375, guid: 9e7797bb065982d4497d030f065d6e2f, type: 3}
@@ -24187,6 +24503,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6644944589867386884, guid: b95acdc3b0c1a444c87723520fbab2f0, type: 3}
   m_PrefabInstance: {fileID: 1792319956}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1793504661
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2124601025}
+    m_Modifications:
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433591, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_Name
+      value: Flying Eye Monster (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
 --- !u!1 &1809572341
 GameObject:
   m_ObjectHideFlags: 0
@@ -30828,6 +31201,49 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5bdca1933fde624698bb8c6d6daa44b, type: 3}
+--- !u!4 &2122339193 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+  m_PrefabInstance: {fileID: 353582604}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2124601024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2124601025}
+  m_Layer: 0
+  m_Name: Mosters
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2124601025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124601024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.09, y: 9.43, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1317933486}
+  - {fileID: 289728724}
+  - {fileID: 1767580341}
+  - {fileID: 2122339193}
+  - {fileID: 1359960697}
+  - {fileID: 540187134}
+  - {fileID: 1163226254}
+  m_Father: {fileID: 97701196}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2129110431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31186,6 +31602,63 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &4902190118117221724
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2124601025}
+    m_Modifications:
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433586, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902190119349433591, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
+      propertyPath: m_Name
+      value: Flying Eye Monster
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 60e1b3dd881ace54eb951bcfcad4e4a3, type: 3}
 --- !u!1 &5628018140422024484
 GameObject:
   m_ObjectHideFlags: 0

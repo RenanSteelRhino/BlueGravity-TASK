@@ -50,18 +50,18 @@ namespace BGSTask
                 {
                     bannerList[i].SetupBanner(GameLibrary.Instance.ownedBundles[i]);
                     bannerList[i].gameObject.SetActive(true);
+
+                    int newID = GameLibrary.Instance.ownedBundles[i].ID;
+
+                    //Clear button, remove any duplicated calls
+                    bannerList[i].GetButton().onClick.RemoveAllListeners();
+
+                    bannerList[i].GetButton().onClick.AddListener(() => EquipOutfit(newID));
                 }
                 else
                 {
                     bannerList[i].gameObject.SetActive(false);
                 }
-
-                int newID = GameLibrary.Instance.ownedBundles[i].ID;
-
-                //Clear button, remove any duplicated calls
-                bannerList[i].GetButton().onClick.RemoveAllListeners();
-
-                bannerList[i].GetButton().onClick.AddListener(() => EquipOutfit(newID));
             }
         }
 
