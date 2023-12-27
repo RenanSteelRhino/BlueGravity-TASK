@@ -11,6 +11,10 @@ namespace BGSTask
         public Sprite northSprite;
         public Sprite southSprite;
         public Sprite sideSprite;
+        [Space]
         public int price;
+        [TextArea(1,3)] public string description;
+        public string title;
+        public bool isBought;
     }
 }

@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 2667780365777935271}
   - component: {fileID: 2667780365777935270}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Buy Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -403,8 +403,9 @@ GameObject:
   - component: {fileID: 2667780366670637048}
   - component: {fileID: 2667780366670637050}
   - component: {fileID: 2667780366670637049}
+  - component: {fileID: 8290193261819761055}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Outfit Banner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -473,6 +474,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8290193261819761055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2667780366670637047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd613b74e42eb44ba2ca470584dedbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2667780366695657078}
+  buyButton: {fileID: 2667780365777935270}
+  priceText: {fileID: 8346207741311816114}
+  descriptionText: {fileID: 2667780366927107884}
+  titleText: {fileID: 705740364638797957}
 --- !u!1 &2667780366695657076
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,8 +892,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 53.957, y: -5.481}
-  m_SizeDelta: {x: -143.008, y: -10.962}
+  m_AnchoredPosition: {x: 53.957, y: 93.597}
+  m_SizeDelta: {x: -143.008, y: -209.117}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8399664005426114002
 CanvasRenderer:

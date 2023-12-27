@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace BGSTask
@@ -22,12 +23,7 @@ namespace BGSTask
 
 
         #region Outifit Store
-            private bool outifitStoreOpen;
-            public void SetOutifitStore(bool value) => outifitStoreOpen = value;
-            public bool IsOutifitStoreOpen()
-            {
-                return outifitStoreOpen;
-            }
+            public List<SpriteBundle> ownedBundles = new();
         #endregion
 
 

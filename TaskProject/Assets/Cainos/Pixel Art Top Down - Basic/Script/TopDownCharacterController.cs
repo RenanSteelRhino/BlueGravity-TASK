@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using BGSTask;
 using UnityEngine;
 
 namespace Cainos.PixelArtTopDown_Basic
@@ -10,11 +8,17 @@ namespace Cainos.PixelArtTopDown_Basic
         [SerializeField] float speed;
         private Animator animator;
         Vector2 dir = Vector2.zero;
+        bool lockMovement = false;
 
         private void Start()
         {
             animator = GetComponent<Animator>();
+            OutfitStoreManager.OnStoreOpen += DisableMovement;
+            OutfitStoreManager.OnStoreClose += EnableMovement;
         }
+
+        void DisableMovement() => lockMovement = true;
+        void EnableMovement() => lockMovement = false;
 
         void MovePlayer()
         {
@@ -43,39 +47,56 @@ namespace Cainos.PixelArtTopDown_Basic
 
         private void Update()
         {
+            //If true, disable movement
+            if(lockMovement) return;
+
             // CainosMoveCode_NotMine();
             MovePlayer();
         }
 
-        private void CainosMoveCode_NotMine()
+        // private void CainosMoveCode_NotMine()
+        // {
+        //     Vector2 dir = Vector2.zero;
+        //     if (Input.GetKey(KeyCode.A))
+        //     {
+        //         dir.x = -1;
+        //         animator.SetInteger("Direction", 3);
+        //     }
+        //     else if (Input.GetKey(KeyCode.D))
+        //     {
+        //         dir.x = 1;
+        //         animator.SetInteger("Direction", 2);
+        //     }
+
+        //     if (Input.GetKey(KeyCode.W))
+        //     {
+        //         dir.y = 1;
+        //         animator.SetInteger("Direction", 1);
+        //     }
+        //     else if (Input.GetKey(KeyCode.S))
+        //     {
+        //         dir.y = -1;
+        //         animator.SetInteger("Direction", 0);
+        //     }
+
+        //     dir.Normalize();
+        //     animator.SetBool("IsMoving", dir.magnitude > 0);
+
+        //     GetComponent<Rigidbody2D>().velocity = speed * dir;
+        // }
+
+
+        // Remove link to events to avoid erros
+        private void OnDisable() 
         {
-            Vector2 dir = Vector2.zero;
-            if (Input.GetKey(KeyCode.A))
-            {
-                dir.x = -1;
-                animator.SetInteger("Direction", 3);
-            }
-            else if (Input.GetKey(KeyCode.D))
-            {
-                dir.x = 1;
-                animator.SetInteger("Direction", 2);
-            }
+            OutfitStoreManager.OnStoreOpen -= DisableMovement;
+            OutfitStoreManager.OnStoreClose -= EnableMovement;
+        }
 
-            if (Input.GetKey(KeyCode.W))
-            {
-                dir.y = 1;
-                animator.SetInteger("Direction", 1);
-            }
-            else if (Input.GetKey(KeyCode.S))
-            {
-                dir.y = -1;
-                animator.SetInteger("Direction", 0);
-            }
-
-            dir.Normalize();
-            animator.SetBool("IsMoving", dir.magnitude > 0);
-
-            GetComponent<Rigidbody2D>().velocity = speed * dir;
+        private void OnDestroy() 
+        {
+            OutfitStoreManager.OnStoreOpen -= DisableMovement;
+            OutfitStoreManager.OnStoreClose -= EnableMovement;
         }
     }
 }
